@@ -21,3 +21,5 @@ vim.g.mapleader = " "  -- space as leader
 
 
 require("packageManager")
+require("colorscheme")
+require("statusline")
