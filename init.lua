@@ -20,6 +20,7 @@ vim.opt.clipboard = ""         -- Disables system clipboard
 vim.g.mapleader = " "  -- space as leader
 
 
-require("packageManager")
-require("colorscheme")
-require("statusline")
+require("config/colorscheme")
+require("config/statusline")
+require("config/packageManager")
+require("config/lspconfig")
