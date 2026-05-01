@@ -4,6 +4,8 @@ require("mason-lspconfig").setup({
     ensure_installed = {}
 })
 
+
+--grab it from :help lsp
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('my.lsp', {}),
     callback = function(ev)
@@ -35,3 +37,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end
     end,
 })
+
+vim.cmd("set completeopt+=noselect")
+vim.opt.pumheight = 7
