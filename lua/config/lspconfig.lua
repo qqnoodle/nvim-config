@@ -38,5 +38,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end,
 })
 
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false, -- Only update after leaving insert mode
+  severity_sort = true,
+})
 vim.cmd("set completeopt+=noselect")
 vim.opt.pumheight = 7
